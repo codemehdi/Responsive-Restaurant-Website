@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/hidden-items.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/home-page.css">
+        <link rel="stylesheet" href="styles/menu.css">
+        <link rel="stylesheet" href="styles/discounts.css">
+        <link rel="stylesheet" href="styles/contact.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/media-query.css">
+        <script src="https://kit.fontawesome.com/8dc3636365.js" crossorigin="anonymous"></script>
+        <title>Nourish Fuel</title>
+    </head>
+    <body>
+        <div class="home">
+            <div class="rectangle">
+                <img src="images/layered-waves-haikei.png" alt="#" unselectable="on">
+            </div>
+            <header>
+                <nav>
+                    <div class="title"><a href="index.html">Nourish<span class="title-tocolor"> Fuel</span></a></div>
+                    <div class="options">
+                        <div class="option" onclick="ScrollToMenu()">Menu</div>
+                        <div class="option" onclick="ScrollToDiscount()">Offers</div>
+                        <div class="option" onclick="ScrollToContact()">Contact</div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="backdrop" id="backdrop"></div>
+
+            <div class="Learn-more-container" id="LearnMore">
+                <div class="learn-more-content">
+                    <div class="learn-more-header">
+                        <span class="learn-more-title">Learn More</span>
+                        <button class="learn-more-close" onclick="CloseLearnMore()">X</button>
+                    </div>
+                    <div class="learn-more-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, eligendi autem perferendis quasi quisquam animi culpa sed eaque, ducimus ullam est totam quaerat quod, mollitia consequuntur incidunt dignissimos! Laboriosam vel, autem esse, cum exercitationem laborum atque quasi asperiores porro, iusto eligendi qui aut deleniti magni nulla nesciunt cupiditate iure repellat recusandae. Delectus, modi doloremque pariatur, iure dolor dolorum ipsum dicta eveniet distinctio reiciendis impedit consectetur animi obcaecati necessitatibus optio iusto dolores saepe molestias consequatur, vitae unde fugit! Inventore quam, fugit, blanditiis officiis earum laborum sed laboriosam amet enim minima voluptatum reiciendis distinctio! Rem dignissimos eius laborum. Maxime enim, cum quae aperiam modi nesciunt magnam nam consequuntur accusantium velit ex magni vitae nihil quia ullam, excepturi consectetur error assumenda alias. Sit impedit sequi, dicta ad vero facere eum rem? Aliquid porro provident itaque omnis ipsam aspernatur quia accusantium asperiores quae quis, dolorem necessitatibus, quaerat iste rerum, neque possimus reiciendis! Accusamus, pariatur consectetur. Aut explicabo vel harum, minima possimus dolores impedit sequi eius distinctio, exercitationem facere fugit eaque atque commodi dolorem sunt, beatae accusantium minus. Iste, harum labore aperiam reprehenderit totam quam.
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="home-mid">
+                <div class="text">
+                    <div class="text-title">For A Better Taste</div>
+                    <div class="text-moto">Delicious. Healthy and <span class="tocolor">Cheap</span></div>
+                    <div class="buttons">
+                        <button onclick="ScrollToMenu()">Menu</button>
+                        <button onclick="ShowLearnMore()">Learn More</button>
+                    </div>
+                </div>
+                <div class="picture">
+                    <div class="picture-container-home-mid">
+                        <img src="images/cropped-dish-home.png" alt="Home-Dish">
+                    </div>
+                    <div class="background-circle"></div>
+                </div>
+            </div>
+            <div class="line-circle" id="scrollMenu">
+                <div class="line1"></div>
+                <div class="circle"><img src="images/menu-icon.png" alt="Menu" class="menu-picture" draggable="false"></div>
+                <div class="line2"></div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="menu-options-container">
+                <div class="options-container">
+                    <label class="option" for="test1" id="mealpic">
+                        <div class="pic-display-container"><img src="images/dishes/main-courses/dish3.png" alt="Meal 1" class="option-picture" id="MealDisplay"></div>
+                    </label>
+                    <input type="radio" name="check" id="test1">
+                </div>
+    
+                <div class="options-container">
+                    <label class="option" for="test2" id="saladpic">
+                        <div class="pic-display-container"><img src="images/dishes/salads/salad2.png" alt="Salad 1" class="option-picture" id="SaladDisplay"></div>
+                    </label>
+                    <input type="radio" name="check" id="test2">
+                </div>
+    
+                <div class="options-container">
+                    <label class="option" for="test3" id="drinkpic">
+                        <div class="pic-display-container"><img src="images/dishes/drinks/drink1.png" alt="Drink 1" class="option-picture" id="drinkDisplay"></div>
+                    </label>
+                    <input type="radio" name="check" id="test3">
+                </div>
+            </div>
+
+
+            <div class="dishes-to-pick">
+                <div class="dishes meals" id="MealItemsDisplay">
+                    <div class="dish">
+                        <div class="dish-pic">
+                            <img src="images/dishes/main-courses/dish1.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">14.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-pic">
+                            <img src="images/dishes/main-courses/dish2.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">24.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-pic">
+                             <img src="images/dishes/main-courses/dish3.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">34.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-pic">
+                            <img src="images/dishes/main-courses/dish4.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">34.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-pic">
+                            <img src="images/dishes/main-courses/dish5.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">19.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-pic">
+                            <img src="images/dishes/main-courses/dish6.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">24.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="not-for-sell-container" id="order_container">
+                    <div class="not-for-sell-content">
+                        <div class="not-for-sell-header">
+                            <span>Order</span>
+                            <button onclick="CloseOrderMenu()">X</button>
+                        </div>
+                        <div class="not-for-sell-text">
+                            You can't actually buy an item from this site
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dishes salads" id="SaladItemsDisplay">
+                    <div class="dish">
+                        <div class="dish-pic">
+                            <img src="images/dishes/salads/salad1.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">14.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="dish"> 
+                        <div class="dish-pic">
+                            <img src="images/dishes/salads/salad2.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">24.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-pic">
+                             <img src="images/dishes/salads/salad3.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">34.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-pic">
+                            <img src="images/dishes/salads/salad4.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">34.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-pic">
+                            <img src="images/dishes/salads/salad5.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">19.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-pic">
+                            <img src="images/dishes/salads/salad6.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">24.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dishes drinks" id="DrinkItemsDisplay">
+                    <div class="dish">
+                        <div class="dish-pic">
+                            <img src="images/dishes/drinks/drink1.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">9.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-pic">
+                            <img src="images/dishes/drinks/drink2.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">11.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-pic">
+                             <img src="images/dishes/drinks/drink3.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">7.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-pic">
+                            <img src="images/dishes/drinks/drink4.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">11.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-pic">
+                            <img src="images/dishes/drinks/drink5.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">9.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-pic">
+                            <img src="images/dishes/drinks/drink6.png" alt="Meal" class="meal">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <p class="price">14.99$</p>
+                        <div class="buttons">
+                            <button class="order" onclick="ShowOrderMenu()">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="line-circle" id="scrollDiscount">
+            <div class="line1"></div>
+            <div class="circle"><img src="images/icons/discount.png" alt="Menu" class="menu-picture" draggable="false"></div>
+            <div class="line2"></div>
+        </div>
+
+        <div class="discounts">
+            <div class="main-discount">
+                <div class="main-discount-picture">
+                    <div class="main-discount-picture-frame">
+                        <img src="images/dishes/discounts/discount1.png" alt="Discount 1" class="discount-main-image">
+                    </div>
+                </div>
+                <div class="main-discount-description">
+                    <div class="text text1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="text text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    <div class="text text3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+            </div>
+
+
+
+            
+
+
+
+            <div class="discount-options">
+                <div class="not-for-sell-container not-for-sell-discount-container" id="order_discount_container">
+                <div class="not-for-sell-content">
+                    <div class="not-for-sell-header">
+                        <span>Order</span>
+                        <button onclick="CloseOrderDiscount()">X</button>
+                    </div>
+                    <div class="not-for-sell-text">
+                        You can't actually buy an item from this site
+                    </div>
+                </div>
+                </div>
+                <div class="discount-option" id="DiscountContainer" onmouseover="HoverEffect(this); ShowBtn1();" onmouseout="ResetEffect(this); HideBtn1();">
+                    <img src="images/dishes/discounts/discount2.jpg" alt="discount dish 2">
+                    <div class="discounted-price">-25%</div>
+                    <div><button class="discount-order" id="discountBtn1" onclick="ShowOrderDiscount()">Order Now</button></div>
+                </div>
+                
+                <div class="discount-option" id="DiscountContainer" onmouseover="HoverEffect(this); ShowBtn2();" onmouseout="ResetEffect(this); HideBtn2();">
+                    <img src="images/dishes/discounts/discount3.jpg" alt="discount dish 2">
+                    <div class="discounted-price">-30%</div>
+                    <div><button class="discount-order" id="discountBtn2" onclick="ShowOrderDiscount()">Order Now</button></div>
+                </div>
+                <div class="discount-option" id="DiscountContainer" onmouseover="HoverEffect(this); ShowBtn3();" onmouseout="ResetEffect(this); HideBtn3();">
+                    <img src="images/dishes/discounts/discount4.jpg" alt="discount dish 2">
+                    <div class="discounted-price">-15%</div>
+                    <div><button class="discount-order" id="discountBtn3" onclick="ShowOrderDiscount()">Order Now</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="line-circle" id="scrollContact">
+            <div class="line1"></div>
+            <div class="circle"><img src="images/icons/contact.png" alt="Menu" class="menu-picture" draggable="false"></div>
+            <div class="line2"></div>
+        </div>
+
+        <div class="contact">
+            <div class="contact-message-container" id="ContactMessage">
+                <div class="contact-message-content">
+                    <div class="contact-message-header">
+                        <span>Message</span>
+                        <button onclick="CloseMessage()">X</button>
+                    </div>
+                    <div class="contact-message-text">
+                        Thanks For Your Message But We Can't Actually Receive it
+                    </div>
+                </div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-text">
+                    <div class="contact-title">Message Us</div>
+                    <div class="contact-text-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae consectetur eum cum omnis itaque, totam nisi nostrum fugiat consequatur, tempora eveniet sint obcaecati dolores doloremque provident reiciendis repellat perferendis porro? Totam molestias, sunt suscipit, delectus maiores aspernatur vero repudiandae, voluptates possimus eius quae mollitia minus sequi voluptate excepturi quaerat aperiam sit saepe? Facere, impedit. Quas sed tenetur adipisci voluptas est.</div>
+                    <div class="contact-picture"><img src="images/logo/logo.png" alt="Logo" class="contact-Logo"></div>
+                </div>
+                <div class="fill-forum">
+                    <form action="#" id="myForm">
+                        <label for=""><img src="images/icons/user.png" alt="User" class="first-label-contact"> User</label>
+                        <input type="text" placeholder="Nom Et Prenom..." required>
+                        <label for=""><img src="images/icons/email.png" alt="Email"> Email Adress</label>
+                        <input type="email" placeholder="you@exemple.com" required>
+                        <label for=""><img src="images/icons/message.png" alt="Message"> Message</label>
+                        <textarea name="" id="" cols="30" rows="10" class="contact-message" placeholder="Veuillez saisir votre message..." required></textarea>
+                        <input type="submit" class="contact-submit" id="submitBtn">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-page">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="images/logo/logo.png" alt="Logo">
+                </div>
+                <div class="footer-text">
+                    <div class="footer-title">
+                        Disclaimer
+                    </div>
+                    <div class="footer-text-content">This website is intended solely for demonstration purposes to showcase design and functionality. It is not a platform for a real restaurant, buying, or selling Items. Any listings, images, or information displayed on this website are purely fictional (including logo and website name too) and do not represent actual Restaurant or offerings.</div>
+                    <div class="footer-text-disclaimer">WE DO NOT OWN ANY OF THEM!!!</div>
+                    <div class="socials">
+                        <a href="https://github.com/codemehdi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://ma.linkedin.com/in/el-mehdi-el-ouasbi-8790952a4" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="javascript/script.js"></script>
+    </body>
+</html>

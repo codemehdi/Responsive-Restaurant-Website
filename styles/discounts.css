@@ -1,0 +1,164 @@
+.discounts{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.discounts .main-discount{
+    margin: 3%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.discounts .main-discount .main-discount-picture{
+    height: 480px;
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #949b7e;
+    border-radius: 50%;
+    position: relative;
+    transition: all 1.5s ease;
+    margin-right: 10%;
+}
+
+.discounts .main-discount .main-discount-picture:hover{
+    transform: rotate(180deg);
+}
+
+.discounts .main-discount .main-discount-picture:hover > .main-discount-picture-frame .discount-main-image{
+    transform: scale(1.1);
+}
+
+        .discounts .main-discount .main-discount-picture::before{
+            content: '';
+            background-color: #D7E4C0;
+            border: 2px solid #949b7e;
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            left:0;
+            right: 0;
+            margin: auto;
+            top: -4%;
+        }
+        .discounts .main-discount .main-discount-picture::after{
+            content: '';
+            background-color: #D7E4C0;
+            border: 2px solid #949b7e;
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            left:0;
+            right: 0;
+            margin: auto;
+            bottom: -4%;
+        }
+
+.discounts .main-discount .main-discount-picture .main-discount-picture-frame{
+    width: 80%;
+    height: 80%;
+    border: 2px solid #BBC3A4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discounts .main-discount .main-discount-picture .main-discount-picture-frame img{
+    width: 90%;
+    height: 90%;
+    transition: all 0.3s ease;
+}
+
+.discounts .main-discount-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.discounts .main-discount-description .text{
+    font-size: 20px;
+    color: #36454F;
+    font-weight: 500;
+    padding-left: 3%;
+    margin-left: 10%;
+    opacity: 0.6;
+}
+
+.discounts .main-discount-description .text2{
+    padding:20% 0 20% 0;
+    margin-left: 20%;
+}
+
+.discounts .discount-options{
+    margin-top: 5%;
+    align-self: center;
+    justify-self: center;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: #C9D3B2;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 25px;
+}
+
+.discounts .discount-options .discount-option{
+    height: 90%;
+    width: 80%;
+    border: 2px solid #36454F;
+    align-self: center;
+    justify-self: center;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.discounts .discount-options .discount-option img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.discounts .discount-options .discount-option .discounted-price{
+    position: absolute;
+    background-color: #36454F;
+    color:#13C563;
+    font-weight: 600;
+    font-size: 18px;
+    right: 0;
+    top: 0;
+    width: 20%;
+    text-align: center;
+    border-radius:0 10px 0 0;
+}
+
+.discounts .discount-options .discount-option button{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    border-radius: 0 0 13px 13px;
+    border: 2px solid #36454F;
+    background-color: #36454F;
+    color: #13C563;
+    font-weight: 600;
+    font-size: 18px;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    bottom:-20%
+}
+
+.discounts .discount-options .discount-option button:hover{
+    color:#36454F;
+    background-color: #13C563;
+}

@@ -1,0 +1,97 @@
+.contact{
+    margin-top: 6%;
+    padding: 0 6% 0 3%;
+    margin-bottom: 10%;
+}
+
+.contact .contact-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.contact .contact-container .contact-text .contact-title{
+    color:#36454F;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.contact .contact-container .contact-text .contact-picture{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.contact .contact-container .contact-text .contact-Logo{
+    width: 320px;
+}
+
+.contact .contact-container .contact-text .contact-text-content{
+    text-align: justify;
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+.contact .contact-container .fill-forum{
+    width: 100%;
+    margin:0 0 0 10%;
+}
+
+.contact .contact-container .fill-forum form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .contact-container .fill-forum form img{
+    width: 25px;
+    margin-right: 2%;
+}
+
+.contact .contact-container .fill-forum form label{
+    margin-top: 6%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.contact .contact-container .fill-forum form label:nth-child(1){
+    margin-top: 0;
+}
+
+.contact .contact-container .fill-forum form input{
+    width: 90%;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 2%;
+    border: 2px solid #36454F;
+}
+
+.contact .contact-container .fill-forum form .contact-message{
+    height: 300px;
+    padding-left: 2%;
+    border: 2px solid #36454F;
+    width: 90%;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 5%;
+}
+
+.contact .contact-container .fill-forum form .contact-submit{
+    height: 60px;
+    background-color: #36454F;
+    color: #13C563;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.contact .contact-container .fill-forum form .contact-submit:hover{
+    background-color: #13C563;
+    color: #36454F;
+}

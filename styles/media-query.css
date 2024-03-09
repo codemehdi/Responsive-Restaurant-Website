@@ -1,0 +1,188 @@
+
+@media screen and (max-width: 1117px){
+    .home-mid .picture img{
+        width: 350px;
+    }
+    .home-mid .picture{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .picture-container-home-mid{
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+
+
+
+@media screen and (max-width: 980px){
+    .home-mid .text .buttons button:first-child{
+        margin-right: 10%;
+    }
+    .discounts .main-discount .main-discount-picture:hover{
+        transform: scale(0.9) rotate(180deg);
+    }
+    .discounts .main-discount-picture{
+        transform: scale(0.8);
+    }
+    .discounts .main-discount-description .text{
+        font-size: 16px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 925px){
+    .home-mid .text .text-moto{
+        text-align: left;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .discounts .main-discount-description .text{
+        display: none;
+        padding-bottom: 2%;
+    }
+    .discounts .main-discount-description .text2{
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        width: 100%;
+        padding-top: 0;
+        margin: 3% 0 3% 0;
+    }
+    .discounts .main-discount-picture
+    .home-mid .picture img{
+        width: 250px;
+    }
+    .discounts .main-discount{
+        margin-left: 0;
+    }
+    .discounts .main-discount-picture{
+        transform: scale(0.6);
+    }
+    .discounts .main-discount .main-discount-picture:hover{
+        transform: scale(0.7);
+    }
+    .discounts .main-discount{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .discounts .main-discount .main-discount-picture{
+        align-self: center;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .home-mid{
+        display: flex;
+        width: 100%;
+    }
+    .home-mid .picture{
+        display: none;
+    }
+    .home-mid .text{
+        text-align: center;
+    }
+    .home-mid .text .text-moto{
+        text-align: center;
+    }
+    .home-mid .text .buttons button:first-child{
+        margin-right: 10rem;
+    }
+    .discounts .discount-options .discount-option .discounted-price{
+        font-size: 12px;
+    }
+    .discounts .discount-options .discount-option .discount-order{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .contact .contact-container .contact-text .contact-Logo{
+        width: 240px;
+    }
+    .bottom-page img{
+        height: 200px;
+    }
+    .menu .menu-options-container .options-container .option img{
+        transform: scale(0.7);
+    }
+    .menu .dishes-to-pick .dish img{
+        transform: scale(0.8);
+    }
+    .menu .dishes-to-pick .dish .dish-pic:hover > .meal{
+        transform: scale(0.9);
+    }
+    .menu .menu-options-container .options-container .option:hover{
+        transform: scale(0.9);
+    }
+    .menu .dishes-to-pick .dish p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 513px){
+    .home-mid .text .buttons button:first-child{
+        margin-right: 5%;
+    }
+    .home-mid .text .text-moto{
+        width: 100%;
+        font-size: 18px;
+    }
+    .text .buttons button{
+        width: 120px;
+        height: 50px;
+        font-size: 16px;
+    }
+    body header nav .title a{
+        font-size: 28px;
+    }
+    body header nav .options{
+        font-size: 16px;
+    }
+    .contact .contact-container .contact-text .contact-text-content{
+        font-size: 13px;
+    }
+    .contact .contact-container .fill-forum form input{
+        font-size: 14px;
+    }
+    .contact .contact-container .fill-forum form .contact-message{
+        font-size: 14px;
+    }
+    .contact .contact-container .contact-text .contact-Logo{
+        width: 180px;
+    }
+    .bottom-page img{
+        height: 140px;
+    }
+    .bottom-page .footer-title{
+        font-size: 18px;
+    }
+    .bottom-page .footer-text-content{
+        font-size: 12px;
+    }
+    .socials a{
+        transform: scale(1.5);
+    }
+    .socials a:hover{
+        transform: scale(2.0);
+    }
+    .menu .menu-options-container .options-container .option img{
+        transform: scale(0.4);
+    }
+
+}

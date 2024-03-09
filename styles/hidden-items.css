@@ -1,0 +1,210 @@
+.Learn-more-container{
+    width: 70%;
+    height: 90%;
+    background-color: white;
+    border-radius: 15px;
+    z-index: 5;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid #36454F;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    z-index: -2;
+    transition: opacity 0.3s ease;
+}
+
+.Learn-more-container .learn-more-content{
+    padding: 2%;
+    height: 100%;
+}
+
+.Learn-more-container .learn-more-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Learn-more-container .learn-more-header span{
+    font-size: 26px;
+    font-weight: 700;
+    color: #36454F;
+}
+
+.Learn-more-container .learn-more-header button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #36454F;
+    color: #F0F5E6;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Learn-more-container .learn-more-header button:hover{
+    background-color: #F0F5E6;
+    color: #36454F;
+}
+
+.Learn-more-container .learn-more-content .learn-more-text{
+    text-align: justify;
+    height: 85%;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.6;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.backdrop{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.backdrop.show{
+    opacity:1;
+    display:block;
+}
+
+
+
+/* ========================================= Order Now ================================== */
+
+.not-for-sell-container{
+    width: 70%;
+    height: 90%;
+    background-color: white;
+    border-radius: 15px;
+    z-index: -2;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid #36454F;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    margin: auto;
+    transition: opacity 0.3s ease;
+}
+
+.not-for-sell-container .not-for-sell-content{
+    padding: 2%;
+    height: 100%;
+}
+
+.not-for-sell-container .not-for-sell-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.not-for-sell-container .not-for-sell-header span{
+    font-size: 26px;
+    font-weight: 700;
+    color: #36454F;
+}
+
+.not-for-sell-container .not-for-sell-header button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #36454F;
+    color: #F0F5E6;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.not-for-sell-container .not-for-sell-header button:hover{
+    background-color: #F0F5E6;
+    color: #36454F;
+}
+
+.not-for-sell-container .not-for-sell-content .not-for-sell-text{
+    height: 85%;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+
+/* ========================================= Contact Message ================================== */
+
+
+.contact-message-container{
+    width: 70%;
+    height: 90%;
+    background-color: white;
+    border-radius: 15px;
+    z-index: -2;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid #36454F;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    margin: auto;
+    transition: opacity 0.3s ease;
+}
+
+.contact-message-container .contact-message-content{
+    padding: 2%;
+    height: 100%;
+}
+
+.contact-message-content .contact-message-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-message-content .contact-message-header span{
+    font-size: 26px;
+    font-weight: 700;
+    color: #36454F;
+}
+
+.contact-message-content .contact-message-header button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #36454F;
+    color: #F0F5E6;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-message-content .contact-message-header button:hover{
+    background-color: #F0F5E6;
+    color: #36454F;
+}
+
+.contact-message-content .contact-message-text{
+    height: 85%;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
